@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class MainThirteen {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите строку из слов, разделенных пробелами. Например: “I love java 8 Я люблю java 14 core1”");
         String str = scanner.nextLine();
         String[] result = str.split(" ");
         String[] result2 = new String[result.length];
@@ -15,7 +16,7 @@ public class MainThirteen {
                    System.out.println(result2[i]);
                }
            }
-        System.out.println("Количество слов латиницей: " + x);
+        System.out.println("Количество таких слов: " + x);
 
     }
 }
