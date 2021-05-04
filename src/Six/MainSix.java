@@ -6,19 +6,19 @@ public class MainSix {
         System.out.println("Выберите что переводить: 1 - масса, 2 - расстояние");
         Scanner scanner = new Scanner(System.in);
         int x = scanner.nextInt();
-        System.out.println("Выберите единицу измерения: 1 - метр, 2 - миля, 3 - ярд, 4 - фут");
+        switch (x) {
+            case 1:  System.out.println("Выберите единицу измерения: 1 - кг, 2 - стон, 3 - фунт, 4 - унция");
+                break;
+            case 2:  System.out.println("Выберите единицу измерения: 1 - метр, 2 - миля, 3 - ярд, 4 - фут");
+                break;
+        }
         int y = scanner.nextInt();
         System.out.println("Введите число выбранных единиц");
         float z = scanner.nextInt();
-
     /*  x   1 = масса,  2 =  расстояние
         y   1 - метр, 2 - миля, 3 - ярд, 4 - фут
         y   1 - кг, 2 - стон, 3 - фунт, 4 - унция
-
-        z   колиичество
-          */
-
-
+        z   колиичество     */
         switch (x) {
             case 1:
                 switch (y) {
@@ -75,7 +75,6 @@ public class MainSix {
                         System.out.println("Футы: " + z);
                         break;
                 }
-
         }
     }
 }
