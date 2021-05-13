@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class MainFinal4 {
     public static void main(String[] args) {
         System.out.println("Загадка: Сидит дед, во сто шуб одет, кто его раздевает, тот слезы проливает");
-        System.out.println("Всего 3 попытки. В первой попытке можно импользовать подсказку. Подсказка сократит количество попыток до одной");
+        System.out.println("Всего 3 попытки. В первой попытке можно использовать подсказку. Подсказка сократит количество попыток до одной");
         Scanner scanner = new Scanner(System.in);
         for (int i = 1; i <= 3; i++ ) {
             String answer = scanner.nextLine();
